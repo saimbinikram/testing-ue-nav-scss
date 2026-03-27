@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    color: var(--body-background-color);
+}
+
+:root {
+    --body-background-color: #ffffff;
+    --primary-text-color: #222222;
+    --secondary-text-color: #808080;
+    --nav-links-color: #2e2e2e;
+    --nav-background-color: #F6F6F6;
+    --footer-background-color: #F2F0EC;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    font-size: 0.875rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    height: 12vh;
+    width: 96vw;
+    margin: 20px auto;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+}
+
+nav .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+nav .logo img {
+    height: 3.5rem;
+    /* if i change this value to percentages i-e 30% 40% etc, the image become way too large. why */
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+nav ul>li>a {
+    color: var(--nav-links-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.middle > li:is(:nth-child(1), :nth-child(4), :nth-child(5), :nth-child(6)) > a::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; 
+    color: black;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+/* Navbar Right Side */
+
+.right ul {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.right button {
+    background-color: #FFD741;
+    padding: 10px 20px;
+    transition: 0.25s ease;
+
+    &:hover{
+        color: green;
+    }
+}
+
+
+
+.right>ul>li:nth-child(2)::before {
+    content: "\f0ac";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 5px;
+    color: black;
+}
+
+/* search icon  */
+.fa-solid{
+    font-size: 1.125rem;
+}
+
+/* ------------------------- */
+
+/* Main Section */
+
+/* Hero Section */
